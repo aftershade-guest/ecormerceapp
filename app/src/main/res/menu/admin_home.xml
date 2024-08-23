@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_maintain_products"
+        android:icon="@drawable/ic_maintain_products"
+        android:title="Maintain" />
+
+    <item
+        android:id="@+id/nav_order_admin"
+        android:icon="@drawable/ic_new_orders"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/admin_new_products"
+        android:icon="@drawable/ic_new_products"
+        android:title="Prodcuts" />
+
+    <item
+        android:id="@+id/navigation_logout_admin"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+</menu>

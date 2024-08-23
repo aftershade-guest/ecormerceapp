@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+<!--        <EditText-->
+<!--            android:id="@+id/search_product_name"-->
+<!--            android:layout_width="290dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Search"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:layout_marginStart="60dp"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:padding="9dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16dp"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/search_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toRightOf="@id/search_product_name"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:padding="9dp"-->
+<!--            android:text="Search"-->
+<!--            android:textSize="9dp"-->
+<!--            android:background="@color/colorPrimaryDark"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textStyle="bold"-->
+<!--            android:elevation="6dp"-->
+<!--            />-->
+
+        <ImageButton
+            android:id="@+id/search_intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            android:padding="25dp"
+            />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_product_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:searchIcon="@drawable/ic_baseline_search"
+            app:iconifiedByDefault="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:queryHint="Search for products"
+            app:queryBackground="@color/colorWhite"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_4">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
